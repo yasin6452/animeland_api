@@ -4,10 +4,10 @@ import { S3Client, HeadObjectCommand } from '@aws-sdk/client-s3';
 // ==== تنظیمات ArvanCloud S3 ====
 const s3Client = new S3Client({
     region: 'ir-thr-at1',
-    endpoint: 'https://s3.ir-thr-at1.arvanstorage.ir',
+    endpoint: '',
     credentials: {
-        accessKeyId: 'd4d27171-8ce2-4d53-92b5-0a7810b3f07a',
-        secretAccessKey: '612d333b6fda9d8ae644d870cc4d0e57a9d8ddfb9ee2d36ae41c871f786f584d'
+        accessKeyId: '',
+        secretAccessKey: ''
     },
     forcePathStyle: true
 });
@@ -15,9 +15,9 @@ const s3Client = new S3Client({
 const BUCKET = 'animeland-links';
 
 // ==== تنظیمات وردپرس ====
-const WP_BASE = 'https://animeland.info/wp-json/wp/v2';
-const USERNAME = 'api-admin';
-const PASSWORD = 'DCxg CRVS nfvd 9A7y mUvh 3TVE';
+const WP_BASE = '';
+const USERNAME = '';
+const PASSWORD = '';
 const authHeader = 'Basic ' + Buffer.from(`${USERNAME}:${PASSWORD}`).toString('base64');
 
 const wpHeaders = {
