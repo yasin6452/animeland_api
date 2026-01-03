@@ -1,0 +1,16 @@
+{
+  "name": "anime-project",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.958.0",
+    "node-fetch": "^3.3.2"
+  }
+}
